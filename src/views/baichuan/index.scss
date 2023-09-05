@@ -1,0 +1,49 @@
+.markdown-body pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  color: #cbd2ea!important;
+}
+.markdown-body pre code, .markdown-body pre tt {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body pre code {
+  font-size: 100%;
+}
+
+.markdown-body .hljs, .markdown-body pre {
+  background: #1a1b26;
+  color: #cbd2ea!important;
+}
+.markdown-body .highlight pre, .markdown-body pre {
+  padding: 16px 16px 8px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 6px;
+  direction: ltr;
+}
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+}
