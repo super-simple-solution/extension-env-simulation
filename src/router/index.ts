@@ -10,16 +10,16 @@ const routes = [
     meta: { title: '首页' },
     children: [
       {
-        component: () => import('@/views/index.vue'),
-        path: 'index',
-        name: 'index',
-        meta: { title: '首页' },
-      },
-      {
         component: () => import('@/views/baichuan/index.vue'),
         path: 'baichuan',
         name: 'baichuan',
         meta: { title: 'baichuan' },
+      },
+      {
+        component: () => import('@/views/baidu_ai/index.vue'),
+        path: 'baidu_ai',
+        name: 'baidu_ai',
+        meta: { title: 'baidu_ai' },
       },
     ],
   },
