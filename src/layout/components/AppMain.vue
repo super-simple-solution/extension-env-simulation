@@ -36,10 +36,8 @@ export default {
 
 <style lang="scss">
 .app-main {
-  /*50 = navbar  */
-  min-height: calc(100vh - 48px);
   position: relative;
-  overflow: hidden;
+  top: 50px;
   background-color: #f5f7fd;
   // width: 100%;
   padding: 24px;

@@ -21,6 +21,12 @@ const routes = [
         name: 'baidu_ai',
         meta: { title: 'baidu_ai' },
       },
+      {
+        component: () => import('@/views/leetcode/index.vue'),
+        path: 'leetcode',
+        name: 'leetcode',
+        meta: { title: 'leetcode' },
+      },
     ],
   },
 ]
