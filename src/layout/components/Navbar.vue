@@ -1,50 +1,11 @@
 <template>
   <div class="navbar flex items-center">
-    <div class="nav-left flex">
-      <div class="logo-container flex items-center">
-        <!-- <img src="../../assets/logo_top.png" alt="logo" /> -->
-        <span style="margin-left: 6px">|</span>
-        <span>&nbsp;xxx</span>
-      </div>
-      <div class="nav-home" @click="toHome">
-        <svg-icon name="home" />
-        <span class="ml10">应用中心</span>
-      </div>
-    </div>
     <sidebar class="sidebar-horizontal-container" style="flex: 1" />
-    <div class="right-menu clearfix">
-      <el-dropdown class="avatar-container" trigger="click">
-        <div class="avatar-wrapper clearfix">
-          <div class="user-name left">{{ userInfo.user_name || '--' }}</div>
-          <el-icon class="el-icon--right">
-            <arrow-down />
-          </el-icon>
-        </div>
-        <template #dropdown>
-          <el-dropdown-menu class="user-dropdown">
-            <el-dropdown-item command="logout">
-              <span style="display: block" @click="logout">退出登录</span>
-            </el-dropdown-item>
-          </el-dropdown-menu>
-        </template>
-      </el-dropdown>
-    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { toHome } from '@/utils/auth'
 import Sidebar from './Sidebar/index.vue'
-import { useUserStore } from '@/store/user'
-import { ArrowDown } from '@element-plus/icons-vue'
-
-const userInfo = computed(() => {
-  return useUserStore().userInfo
-})
-
-function logout() {
-  useUserStore().logout()
-}
 </script>
 
 <style lang="scss" scoped>

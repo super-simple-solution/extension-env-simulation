@@ -5,7 +5,10 @@ declare module 'axios' {
     silence?: boolean
   }
   // eslint-disable-next-line
-  export interface AxiosResponse<T = any> extends Promise<T> {}
+  export interface AxiosResponse<T = any> extends Promise<T> {
+    config: any
+    data: any
+  }
   export interface CustomSuccessData<T> {
     [key: string]: T
   }
